@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#define ROW 3//ÐÐ
-#define COL 3//ÁÐ
+#define ROW 3//ï¿½ï¿½
+#define COL 3//ï¿½ï¿½
 
 #include<stdio.h>
 #include<time.h>
@@ -12,8 +12,8 @@ void PlayerMove(char board[ROW][COL], int row, int col);
 void ComputerMove(char board[ROW] [COL],int row, int col);
 
 
-//Íæ¼ÒÓ® - '*'
-//µçÄÔÓ® - '#'
-//Æ½¾Ö - 'Q'
-//¼ÌÐø - 'C'
+//ï¿½ï¿½ï¿½Ó® - '*'
+//ï¿½ï¿½ï¿½ï¿½Ó® - '#'
+//Æ½ï¿½ï¿½ - 'Q'
+//ï¿½ï¿½ï¿½ï¿½ - 'C'
 char Iswin(char board[ROW][COL],int row,int col);
