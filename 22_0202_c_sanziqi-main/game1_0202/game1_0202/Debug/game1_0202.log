@@ -1,0 +1,2 @@
+﻿  game.c
+LINK : fatal error LNK1207: “D:\DEV\源码\22_0202_c_sanziqi-main\game1_0202\Debug\game1_0202.pdb”中的 PDB 格式不兼容；请删除并重新生成
