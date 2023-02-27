@@ -1,4 +1,2 @@
 ﻿  text.c
-D:\DEV\code\VS\text\text.c(158,39): warning C4311: “类型强制转换”: 从“void *”到“int”的指针截断
-D:\DEV\code\VS\text\text.c(158,7): warning C4047: “初始化”:“int *”与“int”的间接级别不同
   text.vcxproj -> D:\DEV\code\VS\text\x64\Debug\text.exe

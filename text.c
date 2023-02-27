@@ -1,5 +1,104 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #pragma warning(disable:6031)
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<errno.h>
+
+void bubbleSort(int arr[], int n) {
+    int i, j, temp;
+    for (i = 0; i < n-1; i++) {
+        for (j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int n = 0, * arr = { 0 };int  i, num;
+
+    printf("输入要排序的数字（输入非数字字符停止):\n");
+
+    // 循环读取用户输入的数字
+    while (scanf("%d", &num) == 1) {
+        n++;
+        arr = (int*)realloc(arr, n * sizeof(int)); // 动态分配内存
+        arr[n - 1] = num;
+    }
+
+    bubbleSort(arr, n);
+
+    printf("从小到大：> ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    free(arr); // 释放动态分配的内存
+    return 0;
+}
+//	输入某年某月某日，判断这一天是这一年的第几天？
+
+//int main()
+//{
+//	int year, month, day = 0;
+//	int sum = 0;
+//	int leap = 0;
+//	printf("请输入年月日:>");
+//	scanf("%d.%d.%d", &year, &month, &day);
+//	switch (month)
+//	{
+//	case 1:sum = 0;	break;
+//	case 2:sum = 31;	break;
+//	case 3:sum = 59;	break;
+//	case 4:sum = 90;	break;
+//	case 5:sum = 120;	break;
+//	case 6:sum = 151;	break;
+//	case 7:sum = 181;	break;
+//	case 8:sum = 212;	break;
+//	case 9:sum = 243;	break;
+//	case 10:sum = 273;	break;
+//	case 11:sum = 304;	break;
+//	case 12:sum = 334;	break;
+//
+//	default:printf("error\n");break;
+//	}
+//	sum = sum + day;
+//	if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
+//		leap = 1;
+//	}
+//	else {
+//		leap = 0;
+//	}
+//	if (leap == 1 && month > 2) {
+//		sum++;
+//	}
+//	printf("一共有%d", sum);
+//	return 0;
+//}
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////有1,2,3,4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
 //int main()
 //{
@@ -133,10 +232,7 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-#include<errno.h>
+
 //int main()
 //{
 //	int* p = (int*)malloc(INT_MAX);
@@ -153,23 +249,23 @@
 //	return 0;
 //}
 
-int main()
-{
-	int* p = (int)calloc(10, sizeof(int));
-	if (p == NULL)
-	{
-		printf("%s\n", strerror(errno));
-	}
-	else
-	{
-		int i = 0;
-		for (i = 0; i < 10; i++)
-		{
-			printf("%d\n", *(p + i));
-		}
-		
-	}
-	realloc(p, 40);
-	free(p);
-	return 0;
-}
+//int main()
+//{
+//	int* p = (int)calloc(10, sizeof(int));
+//	if (p == NULL)
+//	{
+//		printf("%s\n", strerror(errno));
+//	}
+//	else
+//	{
+//		int i = 0;
+//		for (i = 0; i < 10; i++)
+//		{
+//			printf("%d\n", *(p + i));
+//		}
+//		
+//	}
+//	realloc(p, 40);
+//	free(p);
+//	return 0;
+//}
