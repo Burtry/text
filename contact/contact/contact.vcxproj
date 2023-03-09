@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="contact.c" />
     <ClCompile Include="contact_main.c" />
+    <ClCompile Include="text.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contact.h" />

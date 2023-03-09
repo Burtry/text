@@ -1,2 +1,5 @@
 ﻿  contact.c
+D:\DEV\code\my VS code\contact\contact\contact.c(192,30): warning C4028: 形参 1 与声明不同
+  contact_main.c
+  正在生成代码...
   contact.vcxproj -> D:\DEV\code\my VS code\contact\x64\Debug\contact.exe

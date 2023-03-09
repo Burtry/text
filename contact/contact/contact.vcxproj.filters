@@ -21,6 +21,9 @@
     <ClCompile Include="contact.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="text.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="contact.h">
